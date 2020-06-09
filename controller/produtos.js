@@ -32,6 +32,26 @@ const produtosController = {
       
           return res.render("ecomerce", {usuario: req.session.usuario, produtosDb, quantItens: req.session.count, title: 'E-comerce'});
       },
+      ecomerceUp: async (req, res) => {
+  
+        const produtosDb = await produtos.findAll({
+          order: [
+            ['valor', 'DESC']
+          ]
+        });
+      
+          return res.render("ecomerce", {usuario: req.session.usuario, produtosDb, quantItens: req.session.count, title: 'E-comerce'});
+      },
+      ecomerceDown: async (req, res) => {
+  
+        const produtosDb = await produtos.findAll({
+          order: [
+            ['valor', 'ASC']
+          ]
+        });
+      
+          return res.render("ecomerce", {usuario: req.session.usuario, produtosDb, quantItens: req.session.count, title: 'E-comerce'});
+      },
       ecomerceId: async (req, res) => {
   
         const id = req.params.id;

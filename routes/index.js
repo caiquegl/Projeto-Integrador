@@ -37,6 +37,10 @@ router.post('/clienteC', autenController.validando, clienteController.updateC);
 
 
 router.get('/ecomerce', produtosController.ecomerce);
+router.get('/ecomerce/up', produtosController.ecomerceUp);
+router.get('/ecomerce/down', produtosController.ecomerceDown);
+
+
 router.post('/ecomerce',autenController.validando ,carrinhoController.store);
 
 router.get('/ecomerce/:id', produtosController.ecomerceId);

@@ -406,6 +406,7 @@ article .right{
 .produtos .titulo{
     font-weight: bold;
     font-size: 16px;
+    text-align: center;
 }
 
 .produtos .btn{
