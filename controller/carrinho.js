@@ -25,7 +25,6 @@ const carrinhoController = {
     findProdu.forEach(element => {
         let countCarr = element.quantidade_produto;
         countIten = 1 + countCarr;
-        console.log(countCarr + ' quantidade de itens');
         
         valorTotalDb = countIten * element.valor_produto;
 

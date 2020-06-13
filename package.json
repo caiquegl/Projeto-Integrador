@@ -16,6 +16,7 @@
     "express": "~4.16.1",
     "express-session": "^1.17.1",
     "express-validator": "^6.5.0",
+    "heroku-cli": "^7.0.9",
     "http-errors": "~1.6.3",
     "inputmask": "^5.0.3",
     "install": "^0.13.0",
@@ -28,6 +29,8 @@
     "newsapi": "^2.4.0",
     "nodemon": "^2.0.3",
     "path": "^0.12.7",
+    "pg": "^8.2.1",
+    "pg-hstore": "^2.3.3",
     "save": "^2.4.0",
     "sequelize": "^5.21.8",
     "sequelize-cli": "^5.5.1"
